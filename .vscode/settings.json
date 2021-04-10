@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c0bccd8d-dfb5-4ddf-9b44-5d087502bcce/resourceGroups/AstronautsAPI20210410103018ResourceGroup/providers/Microsoft.Web/sites/astronautangular",
+    "appService.deploySubpath": "dist\\my-app"
+}

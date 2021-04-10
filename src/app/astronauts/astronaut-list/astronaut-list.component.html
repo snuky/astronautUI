@@ -1,0 +1,9 @@
+<table class="table">
+    <tr *ngFor="let ast of service.list">
+        <td (click)="populateForm(ast)">{{ast.name}}</td>
+        <td (click)="populateForm(ast)">{{ast.surname}}</td>
+        <td (click)="populateForm(ast)">{{ast.dateOfBirth}}</td>
+        <td (click)="populateForm(ast)">{{ast.superpower}}</td>
+        <td> <button (click)="onDelete(ast.id)" class="btn btn-sm btn-outline-danger">X</button></td>
+    </tr>
+</table>
