@@ -16,6 +16,7 @@ export class AstronautListComponent implements OnInit {
   }
 
   populateForm(emp : Astronaut){
+    emp.dateOfBirth = emp.dateOfBirth.split('T')[0];
     this.service.formData = Object.assign({},emp);
   }
 
@@ -27,5 +28,8 @@ export class AstronautListComponent implements OnInit {
   }
   }
 
+  isHeaderVisible(): Boolean {
+    return this.service.list.length >0 
+  }
 
 }
